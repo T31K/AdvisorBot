@@ -8,7 +8,6 @@ class AdvisorMain
 
 public:
   AdvisorMain();
-  /** Call this to start the sim*/
   void init();
   static std::vector<std::string> userOptionTokenise(std::string userOption);
 
@@ -25,7 +24,6 @@ private:
   void processUserOption(std::string userOption);
   void printLiquidity(std::string userOption);
   unsigned int timeStepsTaken;
-
   std::string currentTime;
 
   OrderBook orderBook{"20200601.csv"};

@@ -11,13 +11,14 @@ AdvisorMain::AdvisorMain()
 }
 
 void AdvisorMain::init()
-{ // initializes the program
+{
 	std::string input;
 	currentTime = orderBook.getEarliestTime(); // user starts at the first timestamp in the dataset
 	printMenu();
 
+	// infinite loop to keep app running, awaiting the user's input
 	while (true)
-	{ // constant while loop while program is running, awaiting the user's input
+	{
 		input = getUserOption();
 		processUserOption(input);
 	}
@@ -612,11 +613,9 @@ void AdvisorMain::gotoNextTimeFrame(std::string userOption)
 	}
 }
 
-void AdvisorMain::gotoPrevTimeFrame()
-{ // Function to send user back 1 time step, for the different commands to get past timesteps data for calculation
-
+void AdvisorMain::gotoPrevTimeFrame() // Function to send user back 1 time step, for the different commands to get past timesteps data for calculation
+{
 	currentTime = orderBook.getPrevTime(currentTime);
-	// std::cout << "Now at " << currentTime << std::endl;
 }
 
 std::string AdvisorMain::getUserOption()
@@ -630,7 +629,6 @@ std::string AdvisorMain::getUserOption()
 	}
 	catch (const std::exception &e)
 	{
-		//
 	}
 	return userOption;
 }
@@ -656,10 +654,9 @@ std::vector<std::string> AdvisorMain::userOptionTokenise(std::string userOption)
 	return userOptionLine;
 }
 
-// Processes the user's input and uses rfind to match which command the user has input
 void AdvisorMain::processUserOption(std::string userOption)
-{
-	if (userOption.rfind("help", 0) == 0) // Print all commands and their uses
+{ // Processes the user's input and uses rfind to match which command the user has input
+	if (userOption.rfind("help", 0) == 0)
 	{
 		printHelp(userOption);
 	}
