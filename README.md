@@ -1,4 +1,4 @@
-analysis of data available on various exchanges. 
+AdvisorBot is a command line tool designed to assist cryptocurrency investors in their analysis of data available on various exchanges. 
 
 With its functionalities, AdvisorBot can provide valuable insights and assistance in decision making processes related to investing in cryptocurrency. 
 
