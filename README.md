@@ -1,10 +1,12 @@
-# AdvisorBot
+analysis of data available on various exchanges. 
 
-AdvisorBot is a command line program that can carry out various tasks to help a cryptocurrency investor analyse the data available on an exchange
+With its functionalities, AdvisorBot can provide valuable insights and assistance in decision making processes related to investing in cryptocurrency. 
 
-# Features:
-- List products available on exchange
-- Get Minimum/Maximum bid/ask of product
-- Get Average bid/ask of product across (n) timestamps
-- Predict bid/ask of product for next timestamp (using Exponential Moving Average)
-- Get liquidity of product
+AdvisorBot has the capabilities to help newbies or seasoned investors make informed decisions. Its user-friendly interface and comprehensive feature set make it an indispensable tool for anyone looking to make the most of their cryptocurrency investments.
+
+g++ is using clang version 13.1.6 to run the application.
+
+
+I am running  
+g++ --std=c++17 *.cpp  
+to compile my code.
