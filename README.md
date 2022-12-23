@@ -2,11 +2,13 @@ AdvisorBot is a command line tool designed to assist cryptocurrency investors in
 
 With its functionalities, AdvisorBot can provide valuable insights and assistance in decision making processes related to investing in cryptocurrency. 
 
-AdvisorBot has the capabilities to help newbies or seasoned investors make informed decisions. Its user-friendly interface and comprehensive feature set make it an indispensable tool for anyone looking to make the most of their cryptocurrency investments.
+AdvisorBot has the capabilities to help newbies or seasoned investors make informed decisions.
 
-g++ is using clang version 13.1.6 to run the application.
+To run the application, simply run:
 
+Compile using:
+`g++ --std=c++17 *.cpp  `
 
-I am running  
-`g++ --std=c++17 *.cpp`
-to compile my code.
+Run output using:
+`./a.out`
+
